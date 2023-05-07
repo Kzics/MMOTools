@@ -1,0 +1,9 @@
+main: fr.tools.ToolsMain
+version: 1.0.0
+name: MMOUtilTools
+api-version: 1.19
+commands:
+  fisharea:
+    description: Spawn fish area
+  specialitems:
+    description: Give special items
