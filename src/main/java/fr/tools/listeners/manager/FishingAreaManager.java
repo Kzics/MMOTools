@@ -1,8 +1,6 @@
 package fr.tools.listeners.manager;
 
 import fr.tools.listeners.utils.Pair;
-import net.Indyuce.mmoitems.MMOItems;
-import net.Indyuce.mmoitems.api.item.mmoitem.MMOItem;
 import org.bukkit.Location;
 import org.bukkit.entity.ArmorStand;
 

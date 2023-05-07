@@ -1,7 +1,5 @@
 package fr.tools.listeners.enums;
 
-import fr.tools.listeners.manager.ItemsManager;
-
 public enum ItemsEnum {
 
     AXE("Axe"),
