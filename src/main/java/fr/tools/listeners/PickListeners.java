@@ -1,21 +1,15 @@
 package fr.tools.listeners;
 
 import fr.tools.ToolsMain;
-import net.Indyuce.mmocore.MMOCore;
-import net.Indyuce.mmocore.api.player.PlayerData;
-import net.Indyuce.mmocore.experience.PlayerProfessions;
-import net.Indyuce.mmocore.experience.Profession;
 import net.minecraft.network.protocol.game.PacketPlayOutAnimation;
 import org.bukkit.FluidCollisionMode;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.data.BlockData;
 import org.bukkit.craftbukkit.v1_19_R2.entity.CraftPlayer;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Player;
-import org.bukkit.entity.Villager;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractEvent;
@@ -72,6 +66,7 @@ public class PickListeners implements Listener {
                             && player.getInventory().getItemInMainHand().getType().name().endsWith("PICKAXE")) {
                         // increment the progress
                         progress++;
+
                         ((CraftPlayer) player).getHandle().b.a(new PacketPlayOutAnimation(((CraftPlayer) player).getHandle(), 0));
 
                         // update the progress bar
